@@ -1,12 +1,9 @@
 package hu.webuni.student.andro.config;
 
-import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.activemq.broker.BrokerService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.annotation.EnableJms;
-import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
-import org.springframework.jms.connection.CachingConnectionFactory;
 import org.springframework.jms.support.converter.MappingJackson2MessageConverter;
 import org.springframework.jms.support.converter.MessageConverter;
 import org.springframework.jms.support.converter.MessageType;
@@ -15,7 +12,7 @@ import org.springframework.jms.support.converter.MessageType;
 @EnableJms
 public class JmsConfig {
 
-	private String brokerUrl="tcp://localhost:8090";
+	//private String brokerUrl="tcp://localhost:8090";
 
 	/*
 	@Bean
