@@ -49,7 +49,7 @@ public class JmsConfig {
 	public BrokerService brokerService() throws Exception {
 		BrokerService brokerService= new BrokerService();
 		brokerService.addConnector("tcp://localhost:8090");
-		brokerService.setPersistent(true);
+		brokerService.setPersistent(false);
 		return brokerService;
 	}
 	
